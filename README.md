@@ -10,14 +10,3 @@ A collection of scripts and methods to perform various activities within Informi
 test
 test2
 test3
-Test 9:55 am
-Test 11:51am
-Test 12:05
-Test 12:07
-Test 12:08
-Test 12:14
-Test 12:15
-Test 12:16
-
-Test 12:17
-Test 12:18
