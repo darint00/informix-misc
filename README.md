@@ -5,7 +5,9 @@ A collection of scripts and methods to perform various activities within Informi
 
 * #### listener.mqtt
 
-    Program examples to insert into the Informix database using the MQTT Wire Listener.  Python and Node examples to insert into **Timeseries**.
+    Example programs to insert into the Informix database using the MQTT Wire Listener.  A Python and Node.js program that inserts into **Timeseries** or **Relational** or a **Collection**.  
+
+    Also included is a Node.js to insert a **binary picture** into a bson in a Relational table.
 
 * #### web
 
