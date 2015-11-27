@@ -1,0 +1,15 @@
+{
+  "name": "pubiotf",
+  "version": "0.1.0",
+  "description": "Node utility that tracks host CPU usage and shares it over MQTT",
+  "main": "pubIOTF.js",
+  "dependencies": {
+    "mqtt": "^1.4.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Cristian Traistaru <traistar@us.ibm.com>",
+  "license": "Apache"
+}
