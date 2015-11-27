@@ -1,0 +1,11 @@
+{
+   "iotfServer" : "messaging.internetofthings.ibmcloud.com:1883",
+   "mqttTopic"  : "cpuUsage/3",
+   "updateInterval" : 1000,
+
+   "orgID"      : "2gk9xj",
+   "devType"    : "RaspberryPi",
+   "devID"      : "b827eb38fcf5",
+   "authMethod" : "token", 
+   "authToken"  : "54HXMscfT-TsFjHrGC"
+} 
