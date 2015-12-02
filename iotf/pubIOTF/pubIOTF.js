@@ -27,7 +27,6 @@ var payload = {
 function init()
 {
   var mqttURL = null;
-  var mqttTopic = null;
   var updateInterval = null;
   try
   {
@@ -41,7 +40,6 @@ function init()
 
   //mqttURL = config.orgID + "." + config.iotfServer;
   mqttURL = config.iotfServer.replace( '<orgID>', config.orgID );
-  mqttTopic = config.mqttTopic;
 
 
   createMQTTConnection(mqttURL);
@@ -93,7 +91,7 @@ function getTEMP()
 
 }
 
-function updateCPUUsage(mqttTopic)
+function updateCPUUsage()
 {
   var stats = os.cpus();
 
@@ -131,7 +129,7 @@ function updateCPUUsage(mqttTopic)
     if( mqttClient && mqttClient.connected )
     {
       console.log("Publish: " + JSON.stringify(payload));
-      console.log("Topic: " + mqttTopic);
+      console.log("Topic: " + config.mqttTopic);
       mqttClient.publish( config.mqttTopic , JSON.stringify(payload) );
     }
   }
