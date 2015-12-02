@@ -45,7 +45,7 @@ function init()
 
 
   createMQTTConnection(mqttURL);
-  updateInterval = setInterval( updateCPUUsage , config.updateInterval );
+  //updateInterval = setInterval( updateCPUUsage , config.updateInterval );
 }
 
 function createMQTTConnection(mqttURL)
@@ -58,6 +58,7 @@ function createMQTTConnection(mqttURL)
 
   mqttClient.on( "connect" , function() {
     console.log( "Connected to MQTT Broker" );
+    updateInterval = setInterval( updateCPUUsage , config.updateInterval );
   } );
 
   mqttClient.on( "error" , function() {
