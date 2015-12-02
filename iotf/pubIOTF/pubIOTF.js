@@ -81,8 +81,8 @@ function getTEMP()
   {
     currTemp= ((fs.readFileSync( "/sys/class/thermal/thermal_zone0/temp")/1000 * 9/5+32)) ;
     payload.d.cpuTemp = currTemp;
-    console.log("Temp: " + currTemp);
-    console.log("Payload Stringify: " + JSON.stringify(payload));
+    //console.log("Temp: " + currTemp);
+    //console.log("Payload Stringify: " + JSON.stringify(payload));
   }
   catch( e )
   {
@@ -130,6 +130,7 @@ function updateCPUUsage(mqttTopic)
 
     if( mqttClient && mqttClient.connected )
     {
+      console.log("Publish: " + JSON.stringify(payload));
       mqttClient.publish( mqttTopic , JSON.stringify(payload) );
     }
   }
