@@ -132,7 +132,7 @@ function updateCPUUsage(mqttTopic)
     {
       console.log("Publish: " + JSON.stringify(payload));
       console.log("Topic: " + mqttTopic);
-      mqttClient.publish( mqttTopic , JSON.stringify(payload) );
+      mqttClient.publish( config.mqttTopic , JSON.stringify(payload) );
     }
   }
 
