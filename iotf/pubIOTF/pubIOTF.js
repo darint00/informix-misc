@@ -131,7 +131,7 @@ function updateCPUUsage(mqttTopic)
     if( mqttClient && mqttClient.connected )
     {
       console.log("Publish: " + JSON.stringify(payload));
-      console.log("Topic: " + mqttTopic));
+      console.log("Topic: " + mqttTopic);
       mqttClient.publish( mqttTopic , JSON.stringify(payload) );
     }
   }
