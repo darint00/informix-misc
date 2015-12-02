@@ -7,10 +7,10 @@ var prevStats  = null;
 var config     = null;
 
 
-// Connect to <org-id>.messaging.internetofthings.ibmcloud.com:1883 
+// Connect to <org-id>.messaging.internetofthings.ibmcloud.com:1883
 // or 8883 for TLS
 //  clientID = "d: <org-id>:<dev-type>:<dev-id>
-//  Username set to "user-token-auth"
+//  Username set to "use-token-auth"
 //  Set password to authorization token
 
 
@@ -18,8 +18,8 @@ var config     = null;
 var payload = {
    d: {
         cpuTemp : null,
-        cpuUtil : null  
-      } 
+        cpuUtil : null
+      }
 };
 
 
@@ -39,8 +39,11 @@ function init()
     return;
   }
 
-  mqttURL = config.orgID + "." + config.iotfServer; 
+  //mqttURL = config.orgID + "." + config.iotfServer;
+  mqttURL = config.iotfServer.replace( '<orgID>', config.orgID );
   mqttTopic = "iot-2/evt/" + config.devType + "/json";
+
+
   createMQTTConnection(mqttURL);
   updateInterval = setInterval( updateCPUUsage , config.updateInterval );
 }
@@ -48,10 +51,8 @@ function init()
 function createMQTTConnection(mqttURL)
 {
   mqttClient = mqtt.connect( mqttURL , {
-    protocolId: 'MQIsdp',
-    protocolVersion: 3,
-    clientID : "d:" + config.orgID + ":" + config.devType + ":" + config.devID,
-    username : "user-token-auth",
+    clientId : "d:" + config.orgID + ":" + config.devType + ":" + config.devID,
+    username : "use-token-auth",
     password : config.authToken
   } );
 
@@ -81,7 +82,7 @@ function getTEMP()
     console.log( "Unable to load config file: " + e.message );
     return;
   }
- 
+
 
 }
 
