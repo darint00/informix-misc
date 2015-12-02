@@ -1,7 +1,7 @@
 {
    "iotfServer" : "mqtts://<orgID>.messaging.internetofthings.ibmcloud.com:8883",
 
-   "mqttTopic"  : "cpuUsage/3",
+   "mqttTopic"  : "iot-2/evt/cpu/fmt/json",
    "updateInterval" : 1000,
 
    "orgID"      : "2gk9xj",

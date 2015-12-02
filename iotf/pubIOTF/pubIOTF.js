@@ -41,7 +41,7 @@ function init()
 
   //mqttURL = config.orgID + "." + config.iotfServer;
   mqttURL = config.iotfServer.replace( '<orgID>', config.orgID );
-  mqttTopic = "iot-2/evt/" + config.devType + "/json";
+  mqttTopic = config.mqttTopic;
 
 
   createMQTTConnection(mqttURL);
@@ -50,8 +50,16 @@ function init()
 
 function createMQTTConnection(mqttURL)
 {
+  var clientId = "d:" + config.orgID + ":" + config.devType + ":" + config.devID;
+  var username = "use-token-auth";
+  var password = config.authToken;
+  console.log("Connect To: " );
+  console.log("   clientId: " + clientId );
+  console.log("   username: " + username);
+  console.log("   password: " + password);
+
   mqttClient = mqtt.connect( mqttURL , {
-    clientId : "d:" + config.orgID + ":" + config.devType + ":" + config.devID,
+    clientId : clientId,
     username : "use-token-auth",
     password : config.authToken
   } );
