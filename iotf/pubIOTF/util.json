@@ -1,0 +1,12 @@
+{
+   "iotfServer" : "mqtts://<orgID>.messaging.internetofthings.ibmcloud.com:8883",
+
+   "mqttTopic"  : "iot-2/evt/cpu-util/fmt/json",
+   "updateInterval" : 15000,
+
+   "orgID"      : "2gk9xj",
+   "devType"    : "RaspberryPi",
+   "devID"      : "0001",
+   "authMethod" : "token",
+   "authToken"  : "fBwex7lsMV8S7S?49H"
+}

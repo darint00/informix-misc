@@ -1,0 +1,53 @@
+Connect To: 
+   clientId: d:2gk9xj:RaspberryPi:0001
+   username: use-token-auth
+   password: fBwex7lsMV8S7S?49H
+Connected to MQTT Broker
+Publish: {"d":{"cpuUtil":0.4024144869215292}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.4026845637583893}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.13449899125756556}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.20161290322580644}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.6048387096774194}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.2688172043010753}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.2686366689053056}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.4026845637583893}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.20174848688634836}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.06734006734006734}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.4024144869215292}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.2688172043010753}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.33557046979865773}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.2688172043010753}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.33557046979865773}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.7407407407407408}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.8760107816711591}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.8108108108108109}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":1.4131897711978465}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.9628610729023385}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.8742434431741762}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":0.9472259810554804}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":1.578586135895676}}
+Topic: iot-2/evt/cpu-util/fmt/json
+Publish: {"d":{"cpuUtil":1.3689253935660506}}
+Topic: iot-2/evt/cpu-util/fmt/json

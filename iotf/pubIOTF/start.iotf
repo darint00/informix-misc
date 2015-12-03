@@ -1,0 +1,3 @@
+cd ~pi/informix-misc/iotf/pubIOTF
+node pubUtil.js &
+node pubTemp.js &
