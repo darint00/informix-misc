@@ -13,3 +13,7 @@ A collection of scripts and methods to perform various activities within Informi
 
 
 * #### iotf
+
+  * pubIOTF
+  * readHistorical
+  
